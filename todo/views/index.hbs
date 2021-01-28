@@ -1,0 +1,23 @@
+
+<center>
+<h1>TO-DO</h1>
+
+<form action="/" method="POST">
+    <label>Your Task To Do :</label>
+    <input type="text" required placeholder="ENTER TASK HERE" name="task">
+    <input type="submit" value="SUBMIT">
+</form>
+
+
+    {{#each details}}
+    <ul>
+    <ui>{{this.task}}</ui>
+    <a type="" href="/edit{{this._id}}">edit</a>
+    
+    <a type="" href="/delete{{this._id}}">delete</a>
+    
+    </ul>
+    {{/each}}
+
+
+</center>
